@@ -1,14 +1,14 @@
 "use strict";
 
-const kleurplaat = document.getElementById("kleurplaat");
+const knopNieuw = document.getElementById("nieuw");
 const knopRood = document.getElementById("rood");
 const knopGroen = document.getElementById("groen");
 const knopBlauw = document.getElementById("blauw");
 const knopReset = document.getElementById("wit");
 
-
-kleurplaat.innerText = "Rarara";
-
-knopRood.addEventListener("click", () => {
-    
+knopNieuw.addEventListener("click", () => {
+    const kleurplaat = new Kleurplaat(10, 10);
+    kleurplaat.createKleurplaat();
+    Kleurplaat.kiesKleur();
 });
+
