@@ -8,6 +8,7 @@ class Kleurplaat {
         this.#hoogte = hoogte;
         this.#breedte = breedte;
     }
+
     createKleurplaat() {
         const tbody = document.querySelector("tbody");
         for (let rij = 0; rij < this.#hoogte; rij ++) {
@@ -17,15 +18,21 @@ class Kleurplaat {
             }
         }
     }
-    static kiesKleur() {
-        for (const knop of document.getElementsByTagName("button")) {
-            knop.addEventListener("click", () => {
+    
+    kiesKleur() {
+        const buttons = document.getElementById("buttons");
+        for (const knop of buttons.getElementsByTagName("button")) {
+            knop.addEventListener("click", function() {
                 console.log(this.id);
-                // switch ()
-            });
+                switch (this.id) {
+                    case "rood" :
+                        this.addKleur();
+                    }
+                });
+            }
         }
-    }
-    kleurKleurplaat(kleur) {
-        td.style.backgroundColor = this.#kleur;
+        
+    addKleur(kleur) {
+        td.style.backgroundColor = kleur;
     }
 }
