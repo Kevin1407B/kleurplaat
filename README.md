@@ -7,9 +7,9 @@ Je doet dit door met de muis op het gewenste kleur te klikken en daarna het veld
 * 3 kleuren aanbieden (rood, groen, blauw en resetkleur)
 * tekenveld heeft een dynamische oppervlakte
 * klik op een veld dan reageert dit veld door zijn locatie en zijn kleur te zeggen in de console
-** vb: "ik ben veld x,y en ik ben wit"
+  * vb: "ik ben veld x,y en ik ben wit"
 * kleur je een veld in dan reageert het veld anders
-** vb: "ik ben veld x,y en ik werd zopas rood gekleurd"
+  * vb: "ik ben veld x,y en ik werd zopas rood gekleurd"
 * breedte en grootte kunnen ingesteld worden
 * kies je een nieuw blad dan start je met een leeg blad (wit)
 * biedt de mogelijkheid aan je tekening te exporteren naar json: de json wordt dan naar de console.log geschreven
